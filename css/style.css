@@ -1,0 +1,552 @@
+@font-face {
+    font-family: 'Natasha';
+    src: url('../Fonts/Natasha.eot'); /* IE9 Compat Modes */
+    src: url('../Fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../Fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+@font-face {
+    font-family: 'MuseoSansCyrl100';
+    src: url('../Fonts/MuseoSansCyrl100.otf');
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl300';
+    src: url('../Fonts/MuseoSansCyrl300.otf');
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl900';
+    src: url('../Fonts/MuseoSansCyrl900.otf');
+}
+  
+body {
+    font-family: Natasha, MuseoSansCyrl, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div, a, p, h1, h2, h3, ul, li input, button, form {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 940px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+#header {
+    background: url(../img/BG.png) no-repeat center top / cover;
+    height: 846px;
+    margin-bottom: 85px;
+}
+
+.header__menu {
+    padding-top: 56px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 270px;
+}
+
+.header__menu__logo {
+    margin-right: auto;
+    letter-spacing: 0.2em;
+    font-family: MuseoSansCyrl100;
+    font-size: 17px;
+}
+
+.header__menu__logo b {
+    font-family: MuseoSansCyrl900;
+    font-size: 17px;
+}
+
+.header__menu__link {
+    padding: 2px 0;
+}
+
+.header__menu__link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: MuseoSansCyrl900;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    margin-right: 50px;
+}
+
+.header__menu__link a:last-child {
+    margin-right: 0;
+}
+
+.header__menu__link a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.menu__link__email {
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+    font-family: MuseoSansCyrl300;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    padding: 2px 0;
+}
+
+.menu__link__email::after {
+    content: '';
+    display: block;
+    background: rgb(173, 173, 173);
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+}
+
+.header__title {
+    width: 720px;
+    margin: 0 auto 265px auto;
+    font-family: Natasha;
+    font-size: 49px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    line-height: 60px;
+}
+
+.header__title  span{
+    font-family: MuseoSansCyrl100;
+    font-size: 29px;
+    color: #fff;
+}
+
+
+/*Section me - Обо мне*/
+
+#me {
+    margin-bottom: 95px;
+}
+
+.me__title {
+    font-family: Natasha;
+    font-size: 37px;
+    text-align: left;
+    letter-spacing: 0.1em;
+    margin-bottom: 80px;
+}
+
+.me__list {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.me__list__item {
+    display: block;
+    width: 460px;
+    font-family: MuseoSansCyrl300;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.me__list__item:last-child {
+    margin-right: 0;
+}
+
+.me__list__item h3 {
+    font-family: Natasha;
+    font-size: 22px;
+    margin-bottom: 45px;
+    letter-spacing: 0.1em;
+}
+
+.me__list__item p {
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.me__list__item p:last-child {
+    margin-bottom: 0;
+}
+
+.me__list__items {
+    display: flex;
+    text-align: center;
+    width: 422px;
+    margin: 0 auto 65px auto;
+    font-family: MuseoSansCyrl100;
+    font-size: 12px;
+}
+
+.me__list__items__romb {
+    color: green;
+    width: 103px;
+    margin-right: 55px;
+}
+
+.me__list__items__romb:last-child {
+    margin-right: 0;
+}
+
+.me__list__items__img {
+    background: url(../img/rhombus.png) no-repeat center;
+    width: 103px;
+    height: 103px;
+    margin: 0 auto 25px auto;
+    padding: 40px 0;
+    font-family: MuseoSansCyrl100;
+    font-size: 20px;
+}
+
+.me__list__connect {
+    width: 460px;
+    display: flex;
+}
+
+.me__list__connect__link {
+    margin-right: 30px;
+}
+
+.me__list__connect__link a {
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-family: MuseoSansCyrl300;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.me__list__connect__link a:hover {
+    text-decoration: underline;
+}
+
+.me__list__connect__link a:last-child {
+    margin-bottom: 0;
+}
+
+.me__list__connect__link:last-child {
+    width: 249px;
+    margin-right: 0;
+    display: flex;
+    font-style: oblique;
+    font-family: MuseoSansCyrl300;
+    font-size: 14px;
+}
+
+.me__list__connect__link img {
+    padding: 14px 0;
+    height: 64px;
+    margin-right: 10px;
+}
+
+.me__list__connect__link p {
+    width: 165px;
+    padding: 34px 0;
+}
+
+/*Section skill - Навыки*/
+
+#skill {
+    margin-bottom: 80px;
+}
+
+.skill__title {
+    font-family: Natasha;
+    font-size: 37px;
+    text-align: left;
+    letter-spacing: 0.1em;
+    margin-bottom: 65px;
+}
+
+.skill__list {
+    display: flex;
+    justify-content: center;
+}
+
+.skill__list__item {
+    display: block;
+    display: flex;
+    width: 210px;
+    margin-right: auto;
+    font-family: MuseoSansCyrl900;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: gray;
+}
+
+.skill__list__item p {
+    padding: 21.5px 0;
+}
+
+.skill__list__item__img {
+    background: url(../img/circle.png) no-repeat center;
+    width: 61px;
+    height: 61px;
+    margin-right: 27px;
+    padding: 23px 0;
+    font-family: MuseoSansCyrl100;
+    font-size: 13px;
+    color: green;
+}
+
+.skill__list__item:last-child {
+    margin-right: 0;
+}
+
+/*Section works - работа*/
+
+#works {
+    height: 402px;
+    margin-bottom: 123px;
+}
+
+.works__title {
+    font-family: Natasha;
+    font-size: 37px;
+    text-align: left;
+    letter-spacing: 0.1em;
+    margin-bottom: 65px;
+}
+
+.works__list {
+    display: flex;
+    justify-content: center;
+}
+
+.works__list__item {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.works__list__item img{
+    width: 100%;
+}
+
+.works__list__item:last-child {
+    margin-right: 0;
+}
+
+.works__list__item__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: MuseoSansCyrl900;
+    font-size: 15px;
+    padding: 125px 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.works__list__item__overlay:hover {
+    opacity: 1;
+}
+
+.works__list__item__overlay p {
+    margin-bottom: 10px;
+}
+
+.works__list__item__overlay a {
+    text-decoration: none;
+    color: #fff;
+    font-family: MuseoSansCyrl300;
+    font-size: 13px;
+}
+
+.works__list__item__overlay a:hover {
+    text-decoration: underline;
+}
+
+/*footer*/
+
+#footer {
+    margin-bottom: 70px;
+}
+
+.footer {
+    font-family: MuseoSansCyrl300;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: gray;
+}
+
+
+@media screen and (max-width: 940px) {
+    .container{
+        width: 95%;
+    }
+
+    .header__menu__link a {
+        margin-right: auto;
+    }
+
+    .header__title {
+        width: 100%;
+        margin: 0 auto 190px auto;
+    }
+
+    .me__list__item {
+        width: 50%;
+        margin-right: 40px;
+    }
+
+    .me__list__items {
+        width: 100%;
+    }
+
+    .me__list__items__romb {
+        width: 103px;
+        margin-right: 20px;
+    }
+
+    .me__list__connect {
+        width: 100%;
+    }
+
+    .me__list__connect__link p {
+        width: 50%;
+        padding: 8% 0;
+        display: block;
+    }
+
+    .me__list__connect__link:last-child {
+        width: 100%;
+    }
+
+    .skill__list__item {
+        margin-right: 10px;
+    }
+
+    .skill__list__item__img {
+        margin-right: 10px;
+    }
+
+    .works__list__item {
+        height: 100%;
+    }
+
+    .works__list__item__overlay {
+        padding: 45% 0;
+    }
+}
+
+
+@media screen and (max-width: 728px) {
+    .container{
+        width: 90%;
+    }
+
+    .header__menu {
+        margin-bottom: 230px;
+    }
+
+    .header__menu__link a {
+        font-family: MuseoSansCyrl100;
+        font-size: 10px;
+    }
+
+    .menu__link__email {
+        display: none;
+    }
+
+    .header__title {
+        width: 100%;
+        margin: 0 auto 190px auto;
+        letter-spacing: 0em;
+        line-height: 50px;
+    }
+
+    .me__list__item {
+        display: block;
+        width: 50%;
+        font-family: MuseoSansCyrl100;
+        font-size: 13px;
+        margin-right: auto;
+    }
+
+    .me__list__item h3 {
+        font-family: Natasha;
+        font-size: 22px;
+        margin-bottom: 45px;
+        letter-spacing: 0.1em;
+    }
+
+    .me__list__items {
+        display: block;
+        width: 50%;
+        margin: 0 auto 60px auto;
+    }
+
+    .me__list__items__romb {
+        width: 103px;
+        margin-right: 20px;
+    }
+
+    .me__list__connect {
+        width: 100%;
+        display: block;
+    }
+    
+    .me__list__connect__link {
+        margin-right: 0;
+    }
+
+    .me__list__connect__link p {
+        width: 50%;
+        padding: 8% 0;
+        display: block;
+    }
+
+    .me__list__connect__link:last-child {
+        width: 100%;
+    }
+
+    .skill__list {
+        display: block;
+    }
+
+    .skill__list__item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .skill__list__item__img {
+        margin-right: 10px;
+    }
+
+    #works {
+        height: 100%;
+    }
+
+    .works__list__item {
+        height: 100%;
+    }
+
+    .works__list__item__overlay {
+        font-family: MuseoSansCyrl300;
+        font-size: 11px;
+        padding: 35% 0;
+    }
+
+    .works__list__item__overlay p {
+        margin-bottom: 5px;
+    }
+
+}
