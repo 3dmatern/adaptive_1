@@ -24,7 +24,7 @@
 }
   
 body {
-    font-family: Natasha, MuseoSansCyrl, sans-serif;
+    font-family: Natasha, MuseoSansCyrl100, MuseoSansCyrl300, MuseoSansCyrl900, sans-serif;
     margin: 0;
     padding: 0;
 }
